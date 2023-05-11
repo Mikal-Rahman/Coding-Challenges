@@ -13,3 +13,7 @@ function contamination(text, char){
     }
     return text.replace(/./g, char);
   }
+
+//---------------------OR---------------------
+
+const contamination = (text, char) => text === '' || char === '' ? '' : text.replace(/./g, char);
